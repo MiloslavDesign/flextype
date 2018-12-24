@@ -19,17 +19,17 @@ define('FLEXTYPE_MINIMUM_PHP', '7.1.3');
 define('ROOT_DIR', str_replace(DIRECTORY_SEPARATOR, '/', getcwd()));
 
 // Define the PATH (without trailing slash).
-define('PATH', ['site'     => ROOT_DIR . '/site',
-                'plugins'  => ROOT_DIR . '/site/plugins',
-                'themes'   => ROOT_DIR . '/site/themes',
-                'entries'  => ROOT_DIR . '/site/entries',
-                'snippets' => ROOT_DIR . '/site/snippets',
-                'menus'    => ROOT_DIR . '/site/menus',
+define('PATH', ['site'     => '/site',
+                'plugins'  => '/site/plugins',
+                'themes'   => '/site/themes',
+                'entries'  => '/site/entries',
+                'snippets' => '/site/snippets',
+                'menus'    => '/site/menus',
                 'config'   => [
-                                'default' => ROOT_DIR . '/flextype/config',
-                                'site'    => ROOT_DIR . '/site/config'
+                                'default' => '/flextype/config',
+                                'site'    => '/site/config'
                               ],
-                'cache'    => ROOT_DIR . '/site/cache']);
+                'cache'    => '/site/cache']);
 
 // Define the path to the logs directory (without trailing slash).
 define('LOGS_PATH', PATH['site'] . '/logs');
